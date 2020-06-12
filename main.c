@@ -101,14 +101,3 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
-
-// struct termios
-// {
-// 	tcflag_t c_iflag; /* input flags */
-// 	tcflag_t c_oflag; /* output flags */
-// 	tcflag_t c_cflag; /* control flags */
-// 	tcflag_t c_lflag; /* local flags */
-// 	cc_t c_cc[NCCS];  /* control chars */
-// 	speed_t c_ispeed; /* input speed */
-// 	speed_t c_ospeed; /* output speed */
-// };
