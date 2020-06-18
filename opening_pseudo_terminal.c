@@ -29,6 +29,19 @@ int main(int argc, char const *argv[])
             perror("error unlockpt");
             exit(EXIT_FAILURE);
         }
+        else
+        {
+            slave_name = ptsname(master_fd);
+            if (!slave_name)
+            {
+                perror("error ptsname");
+                exit(EXIT_FAILURE);
+            }
+            else
+            {
+                printf("slave name: %s\n", slave_name);
+            }
+        }
     }
     return 0;
 }
